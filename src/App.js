@@ -55,6 +55,11 @@ class App extends Component {
     }
 
     createActionHtml(objId, date) {
+
+        // test
+        //console.log('-- createActionHtml --');
+        //console.log(objId);
+
         let {isModelOpen} = this.state;
         let pointerStyle = {
             cursor: 'pointer'
@@ -99,7 +104,7 @@ class App extends Component {
 
     myhistory() {
         let arr = this.mydata();
-        let html = arr.slice(0, 2).map((obj, index) => {
+        let html = arr.slice(0, 3).map((obj, index) => {
             let objId = obj.id;
             let date = obj.date;
             let actionHtml = this.createActionHtml(objId, date);
